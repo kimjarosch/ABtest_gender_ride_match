@@ -61,15 +61,6 @@ Gender-based ride-matching has been explored by various platforms in regions whe
 
 ---
 
-## 🔮 Stretch Goals Completed
-
-- ✅ Simulated `region` and `request_time` for time-of-day analysis
-- ✅ Included `feedback_comment` field for potential sentiment scoring
-- ✅ Used SQL to query behavior by group and gender
-- ✅ Added Tableau visuals for stakeholders
-
----
-
 ##  What I Learned
 
 - How to simulate complex behavioral datasets from scratch
