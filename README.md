@@ -25,14 +25,12 @@ The analysis was designed as an **A/B test**:
 
 ---
 
-## Dashboard
+## Dashboard Preview
 
-![Dashboard Screenshot 1](dashboard/ABtestRideshare1.png)  
-![Dashboard Screenshot 2](dashboard/ABtestRideshare2.png)
+![Dashboard Screenshot 1](ABtestRideshare1.png)  
+![Dashboard Screenshot 2](ABtestRideshare2.png)
 
-The full interactive dashboard can be explored by downloading:  
-
-➡️ **[Download the Tableau Dashboard (.twbx)](dashboard/ABtestGenderRideshare.twbx)**  
+➡️ **[Download the Tableau Dashboard (.twbx)](ABtestGenderRideshare.twbx)**  
 *(Open in Tableau Desktop or free Tableau Reader to interact with it.)*
 
 ---
