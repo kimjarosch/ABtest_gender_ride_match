@@ -1,65 +1,80 @@
-# A/B Test Dashboard – Gender-Based Ride Matching
+#  A/B Test Dashboard – Gender-Based Ride Matching
 
-This project simulates and analyzes the impact of a **gender-based ride matching feature** in a ride-sharing app.  
-The feature allows female riders to request female drivers, with the goal of improving rider **safety, satisfaction, and ride completion rates**.  
+This project simulates an **A/B test** for a **gender-based ride-matching feature** in a ride-share app that allows female riders to request female drivers.
 
----
-
-## Project Overview
-The analysis was designed as an **A/B test**:  
-- **Test Group (A)** – Female riders could request female drivers.  
-- **Control Group (B)** – Default experience, no gender preference.  
-- **Sample Size** – 10,000 simulated rides (5,000 per group).  
-- **Metrics Evaluated**:  
-  - Ride completion rate  
-  - Rider satisfaction score (1–5)  
-  - Average wait time (minutes)  
+The goal: explore how this feature might affect **rider safety, satisfaction, and efficiency** using data-driven analysis.
 
 ---
 
-## Tools & Methods
-- **Python (Pandas, NumPy, Matplotlib)** – Simulated dataset, cleaning, and statistical testing  
-- **SQL (SQLite/PostgreSQL)** – Summarization queries and aggregations  
-- **Tableau Desktop Public Edition** – Dashboard creation and visualization  
-- **Excel** – Quick summaries and validation  
+##  Why I Chose This Project
+
+Safety in transportation is something everyone talks about but rarely quantifies.
+I wanted to see whether a **human-centered feature** — one designed around comfort and trust — could show real statistical impact without hurting performance.
+
+This project combines **A/B testing, data analysis, and data visualization** to connect human experience with measurable outcomes.
 
 ---
 
-## Dashboard Preview
+##  Experiment Setup
 
-![Dashboard Screenshot 1](ABtestRideshare1.png)  
+| Group           | Description                                | Sample Size |
+| --------------- | ------------------------------------------ | ----------- |
+| **A (Test)**    | Female riders could request female drivers | 5 000 rides |
+| **B (Control)** | Default experience, no gender preference   | 5 000 rides |
+
+**Total Rides:** 10 000 simulated
+**Metrics Tracked:**
+
+* Ride completion rate
+* Rider satisfaction (1–5 scale)
+* Average wait time (minutes)
+
+---
+
+##  Tools & Workflow
+
+* **Python** – Pandas, NumPy, Matplotlib for data simulation & analysis
+* **SQL (SQLite/PostgreSQL)** – Aggregations and summaries
+* **Tableau Desktop / Public** – Dashboard creation & visualization
+* **Excel** – Quick validation and cross-checks
+
+---
+
+##  Dashboard Preview
+
+![Dashboard Screenshot 1](ABtestRideshare1.png)
 ![Dashboard Screenshot 2](ABtestRideshare2.png)
 
-➡️ **[Download the Tableau Dashboard (.twbx)](ABtestGenderRideshare.twbx)**  
-*(Open in Tableau Desktop or free Tableau Reader to interact with it.)*
+➡️ **[Download Tableau Dashboard (.twbx)](ABtestGenderRideshare.twbx)**
+*(Open in Tableau Desktop or the free Tableau Reader to explore interactively.)*
 
 ---
 
-## Key Insights
-- **Completion Rates**  
-  - Control Group: ~90%  
-  - Test Group: ~95%  
-  - ✅ The feature increased completion by **+4–5 percentage points**, especially for female riders.  
+##  Key Findings
 
-- **Satisfaction**  
-  - Control Group: 4.2  
-  - Test Group: 4.3  
-  - ✅ Slight improvement in satisfaction for the Test group.  
+* **Ride Completion**
 
-- **Wait Times**  
-  - Average ~5.7 minutes in both groups  
-  - ✅ No increase in wait times despite the new matching criteria.  
+  * Control ≈ 90 %
+  * Test ≈ 95 %
+  * ✅ +4–5 pp increase — strongest among female riders
 
-- **Correlation**  
-  - Scatter plot shows **little relationship between wait time and satisfaction** in either group.  
+* **Rider Satisfaction**
+
+  * Control = 4.2
+  * Test = 4.3
+  * ✅ Slight but consistent improvement in comfort perception
+
+* **Wait Times**
+
+  * ≈ 5.7 minutes in both groups
+  * ✅ No slowdown introduced by matching filter
+
+* **Correlation Insight**
+
+  * Minimal link between wait time and satisfaction; riders valued comfort & safety over small time differences.
 
 ---
 
-## Conclusion
-The A/B test suggests that introducing a **gender-based ride matching feature** improves rider experience and safety:  
-- Higher ride completion rates  
-- Slightly better satisfaction  
-- No meaningful increase in wait times  
+##  Takeaway
 
-**Recommendation:** This feature could be considered for rollout at scale, as it improves outcomes without sacrificing efficiency.  
-
+The simulated test shows that gender-based ride matching can improve safety perception and rider satisfaction without sacrificing efficiency — a small product change with a measurable, meaningful impact.
